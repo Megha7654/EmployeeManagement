@@ -1,0 +1,8 @@
+composer create-project --prefer-dist laravel/laravel ProjectName "5.7.*"
+
+php artisan migrate
+
+php artisan serve
+
+php artisan make:controller ControllerName
+
