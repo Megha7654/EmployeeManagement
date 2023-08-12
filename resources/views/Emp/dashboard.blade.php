@@ -18,7 +18,7 @@
     @endif
     <h1>Welcome @if(Auth::check())   
     {{Auth::user()->name}}
-    {{Auth::user()->email}}    
+    <a href="{{route('logout')}}">Logout</a>   
     @endif</h1>
     </div>
   </div>

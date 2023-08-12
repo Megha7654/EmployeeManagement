@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\EmpAuthController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,9 @@ Route::get('/', function () {
 Route::get('/register',[EmpAuthController::class,'register'])->name('register');
 Route::get('/dashboard',[EmpAuthController::class,'dashboard'])->name('dashboard');
 Route::get('/login',[EmpAuthController::class,'login'])->name('login');
+Route::get('/logout',[EmpAuthController::class,'logout'])->name('logout');
+
+Route::resource('/post',PostController::class);
 
 
 Route::post('/createemp',[EmpAuthController::class,'create'])->name('createemp');

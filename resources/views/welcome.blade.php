@@ -28,21 +28,7 @@
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         <nav class="navbar navbar-expand-sm bg-light">
 
-  <div class="container-fluid">
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('register')}}">Rigester</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('login')}}">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
-      </li>
-    </ul>
-  </div>
-
+ 
 </nav>    
         @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
